@@ -1,0 +1,35 @@
+<!-- 5. insert element in array position wise. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        var n = parseInt(prompt("Enter size of array:-"));
+
+        let insert = [n];
+
+        for (i = 0; i < n; i++) {
+            insert[i] = parseInt(prompt("Enter Element of array:-"));
+        }
+
+        let value = parseInt(prompt("Enter The Changing value"))
+
+        let number = parseInt(prompt("Enter The Position Between 1 To ${n}:"))
+
+        for (i = insert.length - 1; i >= number; i--) {
+            insert[i + 1] = insert[i]
+        }
+        insert[number] = value
+
+        document.write(insert);
+    </script>
+</body>
+
+</html>

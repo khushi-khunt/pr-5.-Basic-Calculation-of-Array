@@ -1,0 +1,37 @@
+<!-- 9. number array elemet using for loop. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var n = parseInt(prompt("Enter Array Size:-"));
+        let flag= 0
+        let array = [n]
+        for(i=0;i<n;i++)
+        {
+            array[i] = parseInt(prompt("Enter Array Element:-"))
+        }
+        var number = parseInt(prompt("Enter Your Element You Can number In Element:-"))
+        for(i=0;i<n;i++)
+        {
+            if(array[i] == number)
+            {
+                flag = 1
+            }
+        }
+        if(flag==1)
+        {
+            document.write(`This Element Is shown = ${number}`);
+        }
+        else
+        {
+            document.write(`This Element Is Not shown = ${number}`);
+        }
+     
+    </script>
+</body>
+</html>

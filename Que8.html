@@ -1,0 +1,32 @@
+<!-- 8. all element sum. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        var n = parseInt(prompt("Enter size of array:-"))
+
+        var sum = 0
+
+        var number = [n]
+
+        for (i = 0; i < n; i++) {
+            number[i] = parseInt(prompt("Enter Array Element :"))
+        }
+        for (i = 0; i < n; i++) {
+            sum += number[i]
+        }
+        document.write(number);
+        document.write(`<br>`);
+        document.write(`All Element Sum is :${sum}`);
+    </script>
+</body>
+
+</html>

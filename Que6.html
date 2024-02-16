@@ -1,0 +1,32 @@
+<!-- 6. delete element in arry position wise. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var n = parseInt(prompt("Enter size of array:-"));
+
+        var number = [n];
+
+        for (i = 0; i < n; i++) {
+            number[i] = parseInt(prompt("Enter Array Element:-"))
+        }
+
+        var value = parseInt(prompt("Enter The Delete Index:-"))
+
+        for (i = value; i < number.length - 1; i++) {
+            number[i] = number[i + 1]
+        }
+        number.length = number.length - 1
+
+        document.write(number);
+    </script>
+</body>
+
+</html>

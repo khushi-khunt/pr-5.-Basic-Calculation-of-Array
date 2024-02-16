@@ -1,0 +1,31 @@
+<!-- 7. update element in array. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var n = parseInt(prompt("Enter Array Size:-"));
+
+        let arr = [n];
+
+        for (i = 0; i < n; i++) {
+            arr[i] = parseInt(prompt("Enter Array Element:-"));
+        }
+
+        let value = parseInt(prompt("Enter The Element which can Update:-"));
+
+        let index = parseInt(prompt("Enter The  Index:-"));
+
+        arr[index] = value;
+
+        document.write(arr);
+    </script>
+</body>
+
+</html>

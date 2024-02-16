@@ -1,0 +1,33 @@
+<!-- 2. find maximum number in array. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+        var n =  parseInt(prompt("Enter size of array"));
+
+             var arr = [n];
+
+             for(var i=0;i<n;i++)
+             {
+                 arr[i] = parseInt(prompt("Enter array element:-"))
+             }
+        let MaxNumber = arr[0]
+     
+        for(var i=0;i<n;i++)
+             {
+                 if(arr[i]>MaxNumber)
+                 {
+                     MaxNumber = arr[i]
+                 }
+             }
+    
+          document.write(MaxNumber);
+     </script>
+</body>
+</html>
